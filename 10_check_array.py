@@ -8,6 +8,7 @@ if a>b:
       flag=1
     else:
       flag=0
+      break
   if flag==1:
     print('YES')
   else:
