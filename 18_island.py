@@ -11,6 +11,10 @@ for i in range(0,n+2):
   else:
     n2.append([0]+n1[i-1]+[0])
 for i in range(0,len(n2)):
-  
+  for j in range(i,len(n2)):
+    if n2[i][j]!=0:
+      if n2[i-1][j-1]==0 and n2[i-1][j]==0 and n2[i-1][j+1]==0 and n2[i][j-1]==0 and n2[i][j+1]==0 and n2[i+1][j-1]==0 and n2[i+1][j]==0 and n2[i+1][j-1]==0:
+        c+=1
+print(c)
 
     
