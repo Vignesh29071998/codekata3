@@ -1,13 +1,21 @@
 a=input()
 s=''
-for i in range(0,len(a)-2,2):
-  if a[i]=='a' and a[i+1]=='b' and i!=len(a)-1:
+m=0
+i=0
+while i<len(a)-1:
+  if a[i]=='a' and a[i+1]=='b':
     s+=a[i]+a[i+1]
+    i+=2
   else:
     s=''
+    i+=1
+  if m<len(s):
+    m=len(s)
 b=len(a)-1
 if a[b]=='a' and a[b-1]=='b' and s!='':
-  s+=a[b]
-print(len(s))
+  m+=1
+print(m)
     
+    
+
     
