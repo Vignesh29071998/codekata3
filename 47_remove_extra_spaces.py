@@ -1,3 +1,4 @@
+#hello 
 a=list(input())
 s=''
 i=0
