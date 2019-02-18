@@ -1,0 +1,5 @@
+n=int(input())
+n1=list(map(int,input().split()))
+a=n1.index(min(n1))
+b=n1.index(max(n1))
+print(a+1,b+1)
