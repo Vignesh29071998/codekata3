@@ -11,7 +11,7 @@ if s[-4:]=='.com':
     if len(s[id1+1:id2])>5:
       print('NO')
     else:
-      if len(s[:id1])<2:
+      if len(s[:id1])<=2:
         print('NO')
       else:
         print('YES')
