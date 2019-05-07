@@ -8,7 +8,7 @@ if s[-4:]=='.com':
   else:
     id1=s.index('@')
     id2=s.index('.')
-    if len(s[id1+1:id2])<3:
+    if len(s[id1+1:id2])>5:
       print('NO')
     else:
       if len(s[:id1])<2:
