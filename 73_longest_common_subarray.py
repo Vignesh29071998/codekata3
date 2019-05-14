@@ -12,7 +12,7 @@ for i in range(0,len(t)-1):
     b.append(t1)
   t1 = ''
 for i in a:
-  if i in b and len(i)>m:
+  if i in b and len(i)>=m:
     m = len(i)
     k = i
 print(k)
