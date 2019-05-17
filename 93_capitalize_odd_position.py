@@ -1,11 +1,13 @@
 s = input().split()
-st,a = '',[]
+p,l,m = '',[],0
 for i in range(0,len(s)):
   for j in range(0,len(s[i])):
-    if j%2 == 0:
-      st += s[i][j].upper()
+    m += 1
+    if m%2 != 0:
+      p += s[i][j].upper()
     else:
-      st += s[i][j]
-  a.append(st)
-  st = ''
-print(*a)
+      p += s[i][j]
+  l.append(p)
+  p = ''
+print(*l)
+
