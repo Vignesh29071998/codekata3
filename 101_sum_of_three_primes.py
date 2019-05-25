@@ -12,7 +12,7 @@ for i in range(2,n):
   if flag == 1:
     a.append(i)
 for i in range(0,len(a)-2):
-  for j in range(i+1,len(a)-1):
+  for j in range(i,len(a)-1):
     for k in range(j,len(a)):
       if a[i]+a[j]+a[k] == n:
         print(a[i],a[j],a[k])
