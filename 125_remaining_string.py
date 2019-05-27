@@ -1,16 +1,16 @@
 s = input()
-s1,a,c = '',{},1
+s1,a = '',[]
 for i in range(0,len(s)):
   if s[i] not in a:
-    if i != len(s)-1:
-      for j in range(i+1,len(s)):
-        if s[i] == s[j]:
-          c += 1
-      a[s[i]] = c
-      c = 1
+    for j in range(i+1,len(s)):
+      if s[i] == s[j]:
+        a.append(s[i])
+        break
     else:
-      a[s[i]] = c
-for i in a:
-  if a[i] == 1:
-    s1 += i
+      s1 += s[i]
 print(s1)
+
+    
+
+
+    
