@@ -4,4 +4,7 @@ def fact(n):
     return 1
   else:
     return n*fact(n-1)
-print((n+(fact(n)//(fact(n-2)*fact(2))))//2)
+if n <= 2:
+  print(n)
+else:
+  print((n+(fact(n)//(fact(n-2)*fact(2))))//2)
